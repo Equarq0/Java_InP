@@ -4,7 +4,7 @@ public class LabUtils {
         for (LaboratoryItem item : items) {
             if (item.getBiohazardLevel() > max.getBiohazardLevel()) {
                 max = item;
-            }   
+            }  
         }
         return max;
     }
