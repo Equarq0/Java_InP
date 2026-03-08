@@ -91,12 +91,7 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public boolean contains(T item) {
-        for (int i = 0; i < count; i++) {
-            if (array[i].equals(item)) {
-                return true;
-            }
-        }
-        return false;
+        return indexOf(item) != -1;
     }
 
     @Override
