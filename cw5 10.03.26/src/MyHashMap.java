@@ -125,12 +125,8 @@ public class MyHashMap<K, V> implements MyMap<K, V> {
                     bucket.next = buckets[index];
                     buckets[index] = bucket;
                     bucket = next_bucket;
-
                 }
-
             }
-
-
         }
     }
 }

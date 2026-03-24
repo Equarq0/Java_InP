@@ -29,8 +29,15 @@ public class Student implements Comparable<Student> {
 
     @Override
     public int compareTo(Student o) {
-        return Double.compare(o.rating, this.rating);
+        int num = Double.compare(this.missedClasses, o.missedClasses);
+        if (num == 0) {
+            num = Double.compare(o.rating, this.rating);
+            if (num == 0) {
+                return o.name.compareTo(this.name);
+            }
+            return num;
+        }
+        return num;
     }
-
 
 }
