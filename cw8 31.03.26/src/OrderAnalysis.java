@@ -32,7 +32,5 @@ public class OrderAnalysis {
         System.out.println("---------------------");
         orders.stream().sorted().findFirst().ifPresentOrElse(student -> System.out.println(student.getProducts()), () -> System.out.println("Нет такого"));
 
-
     }
-
 }
