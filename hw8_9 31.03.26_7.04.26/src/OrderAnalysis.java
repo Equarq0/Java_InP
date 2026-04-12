@@ -29,16 +29,7 @@ public class OrderAnalysis {
                 new Order(2, new User(2, "Kirill"), products2),
                 new Order(3, new User(3, "Evelina"), products3),
                 new Order(4, new User(3, "Evelina"), products4)));
-
-//        orders.stream().flatMap(order -> order.getProducts().stream()).collect(Collectors.toSet()).forEach(p -> System.out.println(p.getName()));
-//        System.out.println("---------------------");
-//        Map<String, Long> products = orders.stream().flatMap(order -> order.getProducts().stream()).collect(Collectors.groupingBy(Product::getName, Collectors.counting()));
-//        System.out.println(products);
-//
-//        System.out.println("---------------------");
-//        orders.stream().sorted().findFirst().ifPresentOrElse(student -> System.out.println(student.getProducts()), () -> System.out.println("Нет такого"));
-
-        // Task1
+        
 
         Optional<Order> order = orders.stream().sorted(new Comparator<Order>() {
             @Override
