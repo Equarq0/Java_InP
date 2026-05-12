@@ -77,6 +77,5 @@ public class OrderAnalysis {
             boolean result = goods.stream().allMatch(p -> userProducts.contains(p));
             if (result) System.out.println(user.getName());
         });
-
     }
 }
